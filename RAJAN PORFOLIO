@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajan Pal | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTcZ9eT4PvW7WJH6uhmzT3nP9o7lK+5mdWzM2a8dF27VEZXll6h6ZV5DhvOYfFZJzZlPcXyNENgjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --primary-color: #1976d2;
+      --secondary-color: #fff176;
+      --light-bg: #ffffffcc;
+      --dark-bg: #1e1e2f;
+      --light-text: #333;
+      --dark-text: #e0e0e0;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom right, #e3f2fd, #fce4ec);
+      color: var(--light-text);
+      transition: background 0.5s, color 0.5s;
+    }
+    body.dark-mode {
+      background: var(--dark-bg);
+      color: var(--dark-text);
+    }
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    #typing-text {
+      font-style: italic;
+      color: var(--secondary-color);
+      font-size: 1.25rem;
+    }
+    .toggle-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    header p, header a {
+      font-size: 1rem;
+      color: #fff;
+      margin: 0.3rem;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+    body.dark-mode h2 {
+      color: #82b1ff;
+      border-color: #82b1ff;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    ul li::before {
+      content: '\f058';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: #29b6f6;
+    }
+    .section-bg {
+      background-color: var(--light-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    body.dark-mode .section-bg {
+      background-color: #2a2a40;
+    }
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 0.75rem 1rem;
+      font-size: 1.2rem;
+      display: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+    <div class="container">
+      <h1>Rajan Pal</h1>
+      <p id="typing-text"></p>
+      <p><a href="mailto:rsaini55550@gmail.com">rsaini55550@gmail.com</a> | +91-7807046388</p>
+      <p>Una, Himachal Pradesh | <a href="https://linkedin.com/in/rajan-pal-92ba46266" target="_blank">LinkedIn</a></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="career-objective section-bg">
+      <h2>Career Objective</h2>
+      <p>Motivated and detail-oriented BCA student with foundational knowledge in software development, programming, and web technologies. Seeking an entry-level position in IT where I can leverage my technical skills and strong problem-solving abilities.</p>
+    </section>
+
+    <section class="education section-bg">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Bachelor of Computer Applications (BCA)</strong> – Chandigarh University (2023 – 2026) – CGPA: 7.02</li>
+        <li><strong>Class 12</strong> – Sunrise Public Sr. Sec. School, HPBSE (2023) – 92%</li>
+        <li><strong>Class 10</strong> – Sunrise Public Sr. Sec. School, HPBSE (2021) – 76%</li>
+      </ul>
+    </section>
+
+    <section class="skills section-bg">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> C, C++</li>
+        <li><strong>Web:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+        <li><strong>Database:</strong> MySQL</li>
+        <li><strong>Tools:</strong> VS Code, Eclipse, Git, MS Office</li>
+        <li><strong>OS:</strong> Windows</li>
+      </ul>
+    </section>
+
+    <section class="strengths section-bg">
+      <h2>Core Strengths</h2>
+      <ul>
+        <li>Quick learner with a keen interest in technology</li>
+        <li>Strong logical and analytical thinking</li>
+        <li>Effective team player with solid communication skills</li>
+        <li>Highly adaptable and self-motivated</li>
+      </ul>
+    </section>
+
+    <section class="languages section-bg">
+      <h2>Languages Known</h2>
+      <p>English – Fluent | Hindi – Fluent</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rajan Pal. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = () => {
+      scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    const text = "BCA Student | Aspiring Software Developer";
+    let i = 0;
+    function typeEffect() {
+      if (i < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 70);
+      }
+    }
+    window.onload = typeEffect;
+  </script>
+</body>
+</html>
